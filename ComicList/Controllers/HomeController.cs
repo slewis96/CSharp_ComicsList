@@ -15,10 +15,9 @@ namespace ComicList.Controllers
             //Comicbooks
             List<ComicBook> allComics = new List<ComicBook>();
             string path = AppDomain.CurrentDomain.BaseDirectory;
-            string[] lines = System.IO.File.ReadAllLines("https://comicpulllist.azurewebsites.net/comics.txt");
+            string[] lines = System.IO.File.ReadAllLines("https://comicpulllist.azurewebsites.net/data/comics.txt");
             int i = 1;
             foreach (string line in lines) {
-                
                 List<string> parameters = line.Split(',').ToList<string>();
                 string title = parameters[0].Trim();
                 string pub = parameters[1].Trim();
