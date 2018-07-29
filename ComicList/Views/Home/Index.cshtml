@@ -1,0 +1,65 @@
+﻿
+<h1 onClick="minimise('comicsJul')"><u>@ViewBag.ComicsJul[0].Month</u></h1>
+<hr style="border-top: 1px solid black;">
+<div id="comicsJul" class="comicswrapper">
+    @foreach (var comic in ViewBag.ComicsJul)
+    {
+        <div class="comics">
+            <a target="_blank" href=@comic.Link>
+            <img class="cover" src=@comic.Image><br>
+            <p class="day">@comic.Day<p>
+            <h2> @comic.SeriesTitle </h2>
+            <h4>@comic.Publisher</h4>
+            </a>
+        </div>
+    }
+</div>
+
+<h1 onClick="minimise('comicsAug')"><u>@ViewBag.ComicsAug[0].Month</u></h1>
+<hr style="border-top: 1px solid black;">
+<div id="comicsAug" class="comicswrapper">
+    @foreach (var comic in ViewBag.ComicsAug)
+    {
+        <div class="comics">
+            <a target="_blank" href=@comic.Link>
+            <img class="cover" src=@comic.Image><br>
+            <p class="day">@comic.Day</p>
+            <h2>@comic.SeriesTitle</h2>
+            <h4> @comic.Publisher </h4>
+            </a>
+        </div>
+    }
+</div>
+
+<h1 onClick="minimise('comicsSep')"><u>@ViewBag.ComicsSep[0].Month</u></h1>
+<hr style="border-top: 1px solid black;">
+<div id="comicsSep" class="comicswrapper">
+    @foreach (var comic in ViewBag.ComicsSep)
+    { 
+        <div class="comics">
+            <a target="_blank" href=@comic.Link>
+            <img class="cover" src=@comic.Image><br>
+            <p class="day">@comic.Day</p>
+            <h2>@comic.SeriesTitle</h2>
+            <h4> @comic.Publisher </h4>
+            </a>
+        </div>
+    }
+</div>
+
+
+<h1 onClick="minimise('comicsOct')"><u>@ViewBag.ComicsOct[0].Month</u></h1>
+<hr style="border-top: 1px solid black;">
+<div id="comicsOct" class="comicswrapper">
+    @foreach (var comic in ViewBag.ComicsOct)
+    {
+        <div class="comics">
+            <a target="_blank" href=@comic.Link>
+            <img class="cover" src=@comic.Image><br>
+            <p class="day">@comic.Day</p>
+            <h2>@comic.SeriesTitle</h2>
+            <h4> @comic.Publisher </h4>
+            </a>
+        </div>
+    }
+</div>
