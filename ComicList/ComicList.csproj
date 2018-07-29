@@ -18,7 +18,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-solar.css" />
-    <None Include="wwwroot\css\comics.txt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Controllers\ComicBookController.cs" />
