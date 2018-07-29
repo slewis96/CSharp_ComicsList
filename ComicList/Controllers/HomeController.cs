@@ -15,7 +15,7 @@ namespace ComicList.Controllers
             //Comicbooks
             List<ComicBook> allComics = new List<ComicBook>();
             string path = AppDomain.CurrentDomain.BaseDirectory;
-            string[] lines = System.IO.File.ReadAllLines(path+"../../../wwwroot/comics.txt");
+            string[] lines = System.IO.File.ReadAllLines("https://comicpulllist.azurewebsites.net/comics.txt");
             int i = 1;
             foreach (string line in lines) {
                 
