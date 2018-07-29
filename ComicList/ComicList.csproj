@@ -15,6 +15,7 @@
     <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-solar.css" />
     <Content Remove="wwwroot\data\comics.txt" />
     <Content Remove="wwwroot\css\comics.txt" />
+    <Content Remove="Views\Home %28copy%29\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-solar.css" />
