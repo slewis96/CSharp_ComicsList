@@ -13,11 +13,17 @@
     <Content Remove="Views\Home\Contact.cshtml" />
     <Content Remove="Views\Home\Privacy.cshtml" />
     <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-solar.css" />
+    <Content Remove="wwwroot\data\comics.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-solar.css" />
+    <None Include="wwwroot\data\comics.txt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Controllers\ComicBookController.cs" />
+    <Compile Remove="Controllers\comics.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\data\" />
   </ItemGroup>
 </Project>
