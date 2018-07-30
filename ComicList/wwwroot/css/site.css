@@ -70,3 +70,6 @@ body {
     color: black;
     font-size: 1.8em;
 }
+#monthTitle{
+    cursor: pointer;
+}
